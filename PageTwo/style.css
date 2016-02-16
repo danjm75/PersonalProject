@@ -1,0 +1,245 @@
+html {
+    background-color: #faf7e1; 
+    height: 100%;
+}
+body {
+    background-color: #8d5629;
+    margin: 0 auto;
+    width: 100%;
+    font-family: arial, helvetica, sans-serif;
+}
+
+/* =====** HEADER **===== */
+a {
+    text-decoration: none;
+    color: #eead0e;
+}
+/* Header  */
+header {
+    height: 150px;
+    margin: 0 auto;
+    padding-top: 0;
+    positon: fixed;
+    z-index: 99;
+}
+li {
+    display: inline;
+    padding: 10px 20px;
+    font-size: 16px;
+    top: 0;
+}
+header li:first-child {
+    border-right: 1px solid #eead0e;
+    
+    padding: 10px auto;
+    width: 80px;
+}
+.left {
+    float: left;
+    margin-left: 20px;
+    width: auto;
+}
+.right {
+    float: right;
+    margin-right: 20px;
+    width: auto;
+    
+}
+.right ul {
+    float: right;
+    padding-right: 50px;
+    padding-top: 90px;
+}
+.left ul {
+    float: left;
+    padding-left: 30px;
+    padding-top: 90px;
+}
+
+h1 {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+div.title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width:40%;
+
+}
+
+h1.title {
+    color: #eead0e;
+    font-family: "Alegreya Sans SC";
+    font-size: 32px;
+    font-size: 4vw;   //viewport width=awesome!
+    text-align: center;
+    text-shadow: 4px 4px 4px #ae0001;
+    /*position my name in center*/
+    left: 50%;
+    margin: 0;
+    padding-top: 0;
+    position: absolute;
+    transform: translate(-50%);
+    top: 0;
+    width: 60%;
+    padding-top: 10px;
+}
+.title span {
+    color: #ae0001;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 2px #eead0e;
+}
+
+/*====** CLEAR-FIX **====*/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    content editable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clear fixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+#main {
+    background-image: url("images/musk_final.jpg");
+    background-size: cover;
+    height: 600px;
+    margin-top: 0;
+    width: 100%;
+    // z-index: 8;
+    
+}
+
+#main p {
+    color: white;
+    font-size: 1.2em;
+    font-size: 2vw;
+    padding: 150px 20% 0 20%;
+    text-shadow: 1px 2px 2px black;
+    position: relative;
+}
+
+
+/* =====** FIRST PHOTO **=====*/
+
+#main2 {
+    background-image: url("images/GoldenGate.jpg");
+    background-size: cover;
+    height: 740px;
+    margin-top: 0;
+    width: 100%;
+    // z-index: 8;
+}
+#main2 p {
+    color: white;
+    font-size: 1.2em;
+    font-size: 2vw;
+    text-shadow: 1px 1px 1px #eead0e;
+    padding: 250px 20% 0 20%;
+    position: absolute;
+
+}
+p::first-letter {
+    font-size: 1.5em;
+}
+.firstLet {
+    font-size: 1.5em;
+}
+#main3 {
+    background-image: url("images/happyCoding.jpg");
+    background-size: cover;
+    image-repeat: no-repeat;
+    height: 750px;
+    margin-top: 0;
+    width: 100%;
+    // z-index: 8;
+}
+#main3 p {
+    color: #ff320b;
+    font-size: .8em;
+    font-size: 2vw;
+    padding: 10px 5% 0 60%;
+    position: absolute;
+}
+
+/*====** LINKS **====*/
+
+h3.list-head {
+    color: #faf7e1;
+    font-size: 1.5em;
+    margin-top: 0;
+    padding: 60px 0 10px 30px  ;
+    text-decoration: underline;
+}
+.main3.list {
+    float: left;
+    height: 60%;
+    margin: 0px 10px 0 20px ;
+    padding: 10px;
+    width: 25%;
+}
+// .list-right {
+//     float: left;
+//     height: 200px;
+//     margin: 10px 30px 0 0 ;
+//     padding: 5px;
+//     width: 300px; 
+// }
+/*use list class to separate this list from header list */
+.list ul {
+    display: table;
+    margin-left: 30px;
+    padding-left: 0;
+    list-style: none;
+}
+.list li {
+    font-size: 16px;
+    display: table-row;
+
+    &:before 
+    display: table-cell;
+    padding-right: 0.4em;
+}
+/*BUTTON*/
+ .button-top {
+    float: left;
+    margin: 100px 20px 40px 30px;
+}
+ 
+button {
+    float: left;
+    height: 40px;
+    width: 100px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #ff9318;
+    opacity: 0.1;
+    margin-left: 30px;
+    z-index: 9999;
+}
+button a {
+    color: #ae0001;
+}
